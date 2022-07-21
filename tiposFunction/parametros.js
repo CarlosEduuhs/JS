@@ -4,7 +4,7 @@ const conta = (...args) => {
 };
 conta('+', 1, 20, 30, 40, 50);
 */
-function conta(op, acumulador, ...numeros) {
+function conta(op, acumulador, ...numeros) { //os ... significam o resto dos parametros
     for (let numero of numeros) {
         if (op === '+') acumulador += numero;
         if (op === '-') acumulador -= numero;
